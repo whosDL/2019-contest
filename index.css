@@ -10,8 +10,46 @@ body {
   min-height: 600px;
 }
 
+header {
+  margin-right: 100px;
+}
+
 main {
-  min-height: 100px;
-  min-width: 100px;
-  background-color: tomato;
+  font-size: 0;  
+}
+
+.cell {
+  display: inline-block;
+  height: 30px;
+  width: 30px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.empty {
+  background-color: white;
+}
+
+.wall {
+  background-image: url('./imgs/wall.gif');
+}
+
+.space {
+  background-image: url('./imgs/bg.gif');
+}
+
+.target {
+  background-image: url('./imgs/target.gif');
+}
+
+.box {
+  background-image: url('./imgs/box.gif');
+}
+
+.box_red {
+  background-image: url('./imgs/box_done.gif');
+}
+
+.worker {
+  background-image: url('./imgs/worker.gif');
 }

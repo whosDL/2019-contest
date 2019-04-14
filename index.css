@@ -3,6 +3,15 @@
   padding: 0;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:active, a:visited, a:hover{
+  color: inherit;
+}
+
 body {
   display: flex;
   justify-content: center;
@@ -11,11 +20,22 @@ body {
 }
 
 header {
-  margin-right: 100px;
+  margin-right: 50px;
+  padding: 20px;
+  border-radius: 8px;
+  border: 2px solid lightgray;
+}
+
+#content {
+  text-align: center;
+  overflow: hidden;
 }
 
 main {
-  font-size: 0;  
+  margin-top: 20px;
+  min-width: 500px;
+  font-size: 0;
+  text-align: center;
 }
 
 .cell {
@@ -24,6 +44,75 @@ main {
   width: 30px;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+#step {
+  display: inline-block;
+  width: 100px;
+  text-align: center;
+}
+
+.rank {
+  line-height: 150%;
+  text-align: center;
+  border-collapse: collapse;
+}
+
+.levels {
+  background-color: gray;
+  color: white;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.stages {
+  background-color: azure;
+}
+
+.level, .stage {
+  border: 1px solid black;
+  padding: 5px 10px 5px;
+}
+
+.control {
+  margin-top: 20px;
+  line-height: 150%;
+  text-align: center;
+  border-collapse: collapse;
+}
+
+.controler {
+  background-color: antiquewhite;
+  color: black;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+#replay, #undo, #redo {
+  border: 1px solid black;
+  padding: 5px 10px 5px;
+}
+
+.arrowKeys, .wasd {
+  vertical-align: text-bottom;
+}
+
+.arrowKeys {
+  display: inline-block;
+  width: 100px;
+  height: 69px;
+  background-image: url(./imgs/arrowKeys.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.wasd {
+  display: inline-block;
+  width: 93px;
+  height: 60px;
+  background-image: url(./imgs/wasd.png);
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .empty {

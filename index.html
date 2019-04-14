@@ -7,12 +7,47 @@
   </head>
   <body>
     <header>
-      <div>guanka</div>
+      <table class="rank">
+        <thead class="levels">
+          <td class="level">简单</td>
+          <td class="level">一般</td>
+          <td class="level">困难</td>
+        </thead>
+        <tbody class="stages">
+          <tr>
+            <td class="stage stage1"><a href="javascript:">①</a></td>
+            <td class="stage stage1"><a href="javascript:">①</a></td>
+            <td class="stage stage1"><a href="javascript:">①</a></td>
+          </tr>
+          <tr>
+            <td class="stage stage2"><a href="javascript:">②</a></td>
+            <td class="stage stage2"><a href="javascript:">②</a></td>
+            <td class="stage stage2"><a href="javascript:">②</a></td>
+          </tr>
+        </tbody>
+      </table>
+      <table class="control">
+        <tbody>
+          <tr class="controler">
+            <td id="replay"><a href="javascript:">重玩</a></td>
+            <td id="undo"><a href="javascript:">撤销</a></td>
+            <td id="redo"><a href="javascript:">恢复</a></td>
+          </tr>
+        </tbody>
+      </table>
     </header>
     <content id="content">
+      <div id="step">Steps: 0</div>
       <main id="container">
       </main>
     </content>
+    <footer>
+      <div>
+        <p>
+          使用 <span class="arrowKeys"></span> 或 <span class="wasd"></span> 控制
+        </p>
+      </div>
+    </footer>
   </body>
   <script src="./box_pusher.js"></script>
 </html>
